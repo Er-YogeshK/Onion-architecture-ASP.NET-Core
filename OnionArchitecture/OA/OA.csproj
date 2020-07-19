@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OA.Domain\OA.Domain.csproj" />
     <ProjectReference Include="..\OA.Infrastructure\OA.Infrastructure.csproj" />
+    <ProjectReference Include="..\OA.Persistence\OA.Persistence.csproj" />
+    <ProjectReference Include="..\OA.Service\OA.Service.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
